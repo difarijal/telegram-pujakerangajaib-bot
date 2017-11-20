@@ -12,8 +12,9 @@ class OtherwiseController extends Telegram.TelegramBaseController {
         
         let message = $.message.text.split(' ');
         let validate_word_1 = message[0].toLowerCase();
+        let lastChar = $.message.text.substr($.message.text.length - 1);
 
-        if(validate_word_1 === 'apakah'){
+        if(validate_word_1 === 'apakah' && lastChar === '?'){
             $.sendMessage(textArray[randomNumber]);
         }else{
             //$.sendMessage('Lau ngomong apa sob?');
