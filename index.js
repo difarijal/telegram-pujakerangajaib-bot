@@ -9,5 +9,4 @@ const PingController            = require('./controllers/ping');
 const OtherwiseController       = require('./controllers/otherwise');
 
 
-tg.router.when(new Telegram.TextCommand('/ping', 'pingCommand'), new PingController())
-    .otherwise(new OtherwiseController());
+tg.router.when(new Telegram.TextCommand('/ping', 'pingCommand'), new PingController()).otherwise(new OtherwiseController());
