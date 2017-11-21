@@ -5,8 +5,8 @@ const Telegram = require('telegram-node-bot');
 class OtherwiseController extends Telegram.TelegramBaseController {
     handle($) {
         var textArray = [
-            'Yoi Bray',
-            'Kaga Bray'
+            'Ya',
+            'Tidak'
         ];
         var randomNumber = Math.floor(Math.random()*textArray.length);
         
@@ -18,6 +18,7 @@ class OtherwiseController extends Telegram.TelegramBaseController {
             $.sendMessage(textArray[randomNumber]);
         }else{
             //$.sendMessage('Lau ngomong apa sob?');
+            console.log('No Message match with the criteria');
         }
     }
 }
