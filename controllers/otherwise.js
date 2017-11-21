@@ -18,6 +18,7 @@ class OtherwiseController extends Telegram.TelegramBaseController {
             $.sendMessage(textArray[randomNumber]);
         }else{
             //$.sendMessage('Lau ngomong apa sob?');
+            console.log('No Message match with the criteria');
         }
     }
 }
