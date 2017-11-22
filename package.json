@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ridho Fauzan",
   "license": "ISC",
   "dependencies": {
     "telegram-node-bot": "^4.0.5"
