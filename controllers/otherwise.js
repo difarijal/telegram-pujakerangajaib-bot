@@ -6,7 +6,8 @@ class OtherwiseController extends Telegram.TelegramBaseController {
     handle($) {
         var textArray = [
             'Ya',
-            'Tidak'
+            'Tidak',
+            'Kamu Diam!'
         ];
         var randomNumber = Math.floor(Math.random()*textArray.length);
         
